@@ -46,7 +46,6 @@
 	poison_type = "oxygen"
 	siemens_coefficient = 0.2
 
-	spawn_flags = SPECIES_IS_WHITELISTED
 	flags = NO_SCAN
 	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
 

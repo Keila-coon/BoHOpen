@@ -24,6 +24,9 @@
 		/obj/item/weapon/storage/belt/security,
 		/obj/item/clothing/accessory/holster/waist,
 		/obj/item/clothing/head/beret/sec/corporate/hos,
+		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/accessory/armor/armguards,
+		/obj/item/clothing/accessory/armor/legguards,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/security,
 		/obj/item/clothing/mask/gas/half)
 

@@ -1,3 +1,5 @@
+// Big ol' edits. Outta here. - Carl
+
 /obj/item/gunbox/blueshield
 	name = "blueshield mainarm box"
 	desc = "A secure box containing a blueshield main weapon."
@@ -6,10 +8,10 @@
 
 /obj/item/gunbox/blueshield/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Jackhammer Revolver Shotgun (12 Gauge)"] = list(/obj/item/weapon/gun/projectile/revolvershotgun, /obj/item/ammo_magazine/m12gdrumjack, /obj/item/ammo_magazine/m12gdrumjack, /obj/item/ammo_magazine/m12gdrumjack/beanbag)
+	options["Combat Shotgun (12 Gauge)"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/combat, /obj/item/weapon/storage/box/beanbags/large)
 	options["WT550 Machine Pistol (9mm)"] = list(/obj/item/weapon/gun/projectile/automatic/wt550, /obj/item/ammo_magazine/m9mmt/rubber, /obj/item/ammo_magazine/m9mmt, /obj/item/ammo_magazine/m9mmt)
-	options["X01 Energy Gun (Weapon Cell)"] = list(/obj/item/weapon/gun/energy/x01, /obj/item/weapon/cell/device/weapon, /obj/item/weapon/cell/device/weapon)
-	var/choice = input(user,"Would you prefer a Jackhammer shotgun, a WT550 Machine Pistol, or an X01 Energy Gun?") as null|anything in options
+//	options["X01 Energy Gun (Weapon Cell)"] = list(/obj/item/weapon/gun/energy/x01, /obj/item/weapon/cell/device/weapon, /obj/item/weapon/cell/device/weapon)
+	var/choice = input(user,"Would you prefer a Combat shotgun or a WT550 Machine Pistol?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
 		for(var/new_type in things_to_spawn) // Spawn all the things, the gun and the ammo.
@@ -26,10 +28,10 @@
 
 /obj/item/gunbox/blueshield/secondary/attack_self(mob/living/user)
 	var/list/options = list()
-	options["NSCW Variable Pistol(Microbattery)"] = list(/obj/item/weapon/storage/secure/briefcase/nsfw_pack_hos)
+//	options["NSFW Variable Pistol(Microbattery)"] = list(/obj/item/weapon/storage/secure/briefcase/nsfw_pack_hos)
 	options["E-Gun (Weapon Cell)"] = list(/obj/item/weapon/gun/energy/gun, /obj/item/weapon/cell/device/weapon, /obj/item/weapon/cell/device/weapon)
 	options["Consul Revolver (.44)"] = list(/obj/item/weapon/gun/projectile/revolver/consul, /obj/item/ammo_magazine/s44, /obj/item/ammo_magazine/s44, /obj/item/ammo_magazine/s44/rubber)
-	var/choice = input(user,"Would you prefer an NSCW, e-gun or a revolver?") as null|anything in options
+	var/choice = input(user,"Would you prefer an e-gun or a revolver?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
 		for(var/new_type in things_to_spawn) // Spawn all the things, the gun and the ammo.
