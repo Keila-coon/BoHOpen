@@ -167,6 +167,9 @@
 		/obj/item/weapon/storage/box/holobadge,
 		/obj/item/clothing/head/beret/sec/corporate/warden,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/security,
+		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/accessory/armor/armguards,
+		/obj/item/clothing/accessory/armor/legguards,
 		/obj/item/clothing/shoes/boots/winter/security,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/device/megaphone,
@@ -195,7 +198,7 @@
 	req_access = list(access_brig)
 
 	starts_with = list(
-		/obj/item/clothing/suit/storage/vest/officer,
+		/obj/item/clothing/suit/armor/pcarrier/medium/security,
 		/obj/item/clothing/head/helmet,
 		/obj/item/weapon/cartridge/security,
 		/obj/item/device/radio/headset/headset_sec,
@@ -212,7 +215,7 @@
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/head/soft/sec/corp,
 		/obj/item/clothing/under/rank/security/corp,
-		///obj/item/ammo_magazine/m45/rubber, //VOREStation Removal,
+		/obj/item/gunbox,
 		/obj/item/weapon/gun/energy/taser,
 		/obj/item/weapon/cell/device/weapon,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/security,
@@ -262,7 +265,7 @@
 	starts_with = list(
 		/obj/item/clothing/accessory/badge/holo/detective,
 		/obj/item/clothing/gloves/black,
-		///obj/item/gunbox, //VOREStation Removal,
+		/obj/item/gunbox,
 		/obj/item/weapon/storage/belt/detective,
 		/obj/item/weapon/storage/box/evidence,
 		/obj/item/device/radio/headset/headset_sec,
