@@ -171,9 +171,9 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/mask/gas/half,
-		/obj/item/weapon/gun/projectile/revolvershotgun,
-		/obj/item/ammo_magazine/m12gdrumjack/beanbag,
-		/obj/item/ammo_magazine/m12gdrumjack/beanbag)
+//		/obj/item/weapon/gun/projectile/revolvershotgun,
+//		/obj/item/ammo_magazine/m12gdrumjack/beanbag,
+//		/obj/item/ammo_magazine/m12gdrumjack/beanbag)
 
 /obj/structure/closet/secure_closet/warden/Initialize()
 	if(prob(50))
