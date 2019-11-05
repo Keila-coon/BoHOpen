@@ -154,44 +154,6 @@
 	icon = 'icons/vore/custom_items_vr.dmi'
 	icon_state = "pda-lucina"
 
-//john.wayne9392:Harmony Prechtl
-/obj/item/device/modkit_conversion/fluff/harmonyspace
-	name = "Harmony's captain space suit modkit"
-	desc = "A kit containing all the needed tools and parts to modify a Captain's hardsuit. It has green and yellow parts inside."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "harmony_kit"
-
-	from_helmet = /obj/item/clothing/head/helmet/space/capspace
-	from_suit = /obj/item/clothing/suit/armor/captain
-	to_helmet = /obj/item/clothing/head/helmet/space/capspace/fluff/harmhelm
-	to_suit = /obj/item/clothing/suit/armor/captain/fluff/harmsuit
-
-//john.wayne9392:Harmony Prechtl
-/obj/item/device/modkit_conversion/fluff/harmonysuit
-	name = "Harmony's captain suit modkit"
-	desc = "A sewing kit containing all the needed tools and fabric to modify a Captain's suit and hat. It has green and yellow fabrics inside."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "harmony_kit"
-
-	from_helmet = /obj/item/clothing/head/caphat
-	from_suit = /obj/item/clothing/under/rank/captain
-	to_helmet = /obj/item/clothing/head/centhat/fluff/harmhat
-	to_suit = /obj/item/clothing/under/rank/captain/fluff/harmuniform
-
-//scree:Scree
-/obj/item/device/modkit_conversion/fluff/screekit
-	name = "Scree's hardsuit modification kit"
-	desc = "A kit containing all the needed tools and parts to modify a hardsuit for a specific user. This one looks like it's fitted for a winged creature."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_helmet = /obj/item/clothing/head/helmet/space/void
-	from_suit = /obj/item/clothing/suit/space/void
-	to_helmet = /obj/item/clothing/head/helmet/space/void/engineering/hazmat/fluff/screehelm
-	to_suit = /obj/item/clothing/suit/space/void/engineering/hazmat/fluff/screespess
 
 //General Use
 /obj/item/weapon/flag
@@ -1991,18 +1953,6 @@
 	..()
 	attack_verb = list("bapped", "thwapped", "bonked", "whacked")
 	icon_state = initial(icon_state)
-
-//SilencedMP5A5 - Serdykov Antoz
-/obj/item/device/modkit_conversion/hasd
-	name = "HASD EVA modification kit"
-	desc = "A kit containing all the needed tools and parts to modify a suit and helmet into something a HASD unit can use for EVA operations."
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_helmet = /obj/item/clothing/head/helmet/space/void/security
-	from_suit = /obj/item/clothing/suit/space/void/security
-	to_helmet = /obj/item/clothing/head/helmet/space/void/security/hasd
-	to_suit = /obj/item/clothing/suit/space/void/security/hasd
 
 //InterroLouis - Kai Highlands
 /obj/item/borg/upgrade/modkit/chassis_mod/kai

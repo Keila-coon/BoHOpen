@@ -217,6 +217,7 @@
 		lsuits[initial(lsuit_type.name)] = lsuit_type
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(lsuits))
 
+
 /datum/gear/uniform/suit/suit_jacket
 	display_name = "suit, modular selection"
 	path = /obj/item/clothing/under/suit_jacket
@@ -225,11 +226,12 @@
 	..()
 	var/list/msuits = list()
 	for(var/msuit in typesof(/obj/item/clothing/under/suit_jacket))
-		if(msuit in typesof(/obj/item/clothing/under/suit_jacket/female/fluff))	//VOREStation addition
-			continue															//VOREStation addition
+//		if(msuit in typesof(/obj/item/clothing/under/suit_jacket/female/fluff))	//VOREStation addition
+//			continue															//VOREStation addition
 		var/obj/item/clothing/suit/msuit_type = msuit
 		msuits[initial(msuit_type.name)] = msuit_type
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(msuits))
+
 
 /datum/gear/uniform/suit/amish  //amish
 	display_name = "suit, amish"
