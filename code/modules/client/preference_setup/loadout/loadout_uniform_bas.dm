@@ -15,3 +15,7 @@ datum/gear/uniform/grey_w_short
 	path = /obj/item/clothing/under/fluff/morunder
 	display_name = "Grey Top with Shorts"
 
+datum/gear/uniform/emt_su
+	path = /obj/item/clothing/under/fluff/emt_su
+	display_name = "EMT Service Uniform"
+	allowed_roles = list("Paramedic","Chief Medical Officer")
