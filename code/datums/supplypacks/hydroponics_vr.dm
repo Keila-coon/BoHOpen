@@ -5,6 +5,7 @@
 	containername = "Bird crate"
 	access = access_hydroponics
 
+/*
 /datum/supply_pack/hydro/sobaka
 	name = "Sobaka crate"
 	contains = list (/obj/item/weapon/storage/box/monkeycubes/sobakacubes)
@@ -32,6 +33,8 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/freezer
 	containername = "Wolpin crate"
+*/
+
 
 /datum/supply_pack/hydro/fennec
 	name = "Fennec crate"
