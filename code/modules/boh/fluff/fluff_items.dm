@@ -33,3 +33,53 @@
 	name = "hood"
 
 //--------------------
+
+
+
+//////////////////////
+// Vox Loadout
+/////////////////////
+
+/obj/item/voxbox
+	name = "Vox material kit"
+	desc = "A secure box containing a set of Vox materials."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "gunbox"
+	w_class = ITEMSIZE_HUGE
+
+/obj/item/voxbox/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Assistant Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ, /obj/item/clothing/head/helmet/space/vox/civ, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Barkeep Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/bartender, /obj/item/clothing/head/helmet/space/vox/civ/bartender, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Chef Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/chef, /obj/item/clothing/head/helmet/space/vox/civ/chef, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Botanist Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/botanist, /obj/item/clothing/head/helmet/space/vox/civ/botanist, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Janitor Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/janitor, /obj/item/clothing/head/helmet/space/vox/civ/janitor, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Cargo Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/cargo, /obj/item/clothing/head/helmet/space/vox/civ/cargo, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Mechanic Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/mechanic, /obj/item/clothing/head/helmet/space/vox/civ/mechanic, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Librarian Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/librarian, /obj/item/clothing/head/helmet/space/vox/civ/librarian, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Chaplain Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/chaplain, /obj/item/clothing/head/helmet/space/vox/civ/chaplain, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Mining Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/mining, /obj/item/clothing/head/helmet/space/vox/civ/mining, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Engineer Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/engineer, /obj/item/clothing/head/helmet/space/vox/civ/engineer, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Atmos Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/engineer/atmos, /obj/item/clothing/head/helmet/space/vox/civ/engineer/atmos, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Science Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/science, /obj/item/clothing/head/helmet/space/vox/civ/science, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Roboticist Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/science/roboticist, /obj/item/clothing/head/helmet/space/vox/civ/science/roboticist, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Medical Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/medical, /obj/item/clothing/head/helmet/space/vox/civ/medical, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Virology Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/medical/virologist, /obj/item/clothing/head/helmet/space/vox/civ/medical/virologist, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Chemist Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/medical/chemist, /obj/item/clothing/head/helmet/space/vox/civ/medical/chemist, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Paramedic Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/medical/paramedic, /obj/item/clothing/head/helmet/space/vox/civ/medical/paramedic, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	options["Security Pressure Suit"] = list(/obj/item/clothing/suit/space/vox/civ/security, /obj/item/clothing/head/helmet/space/vox/civ/security, /obj/item/clothing/shoes/magboots/vox, /obj/item/clothing/gloves/vox, /obj/item/clothing/mask/gas/swat/vox)
+	var/choice = input(user,"What type of suit? (OOC: If you're a head role, ahelp for the headrole suit!)") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/clothing/suit))
+				to_chat(user, "You have chosen \the [AM]. This is probably worth more than you.")
+		qdel(src)
+
+/datum/gear/voxbox
+	display_name = "Vox Material Kit"
+	path = /obj/item/voxbox
+	sort_category = "Xenowear"
+	cost = 15
+//	whitelisted = "Vox"
