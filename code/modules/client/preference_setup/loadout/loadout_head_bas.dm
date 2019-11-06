@@ -7,3 +7,7 @@ datum/gear/head/caval
 	path = /obj/item/clothing/head/fedora/fluff/caval
 	display_name = "Cavalier Hat"
 
+datum/gear/head/pcrc_beret
+	path = /obj/item/clothing/head/beret/fluff/pcrc_b_beret
+	display_name = "PCRC Naval beret"
+	allowed_roles = list("Chief Medical Officer","Medical Doctor","Chemist","Psychiatrist","Paramedic")
