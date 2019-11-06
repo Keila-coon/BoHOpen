@@ -1645,6 +1645,7 @@
 #include "code\modules\client\preference_setup\loadout\loadout_xeno.dm"
 #include "code\modules\client\preference_setup\loadout\loadout_xeno_bas.dm"
 #include "code\modules\client\preference_setup\loadout\loadout_xeno_vr.dm"
+#include "code\modules\client\preference_setup\loadout\loudout_fluffitems_bas.dm"
 #include "code\modules\client\preference_setup\loadout\loudout_head_bas.dm"
 #include "code\modules\client\preference_setup\occupation\occupation.dm"
 #include "code\modules\client\preference_setup\skills\skills.dm"

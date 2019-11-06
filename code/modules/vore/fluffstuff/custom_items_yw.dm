@@ -111,27 +111,6 @@
 	icon = 'icons/vore/custom_items_yw.dmi'
 	icon_state = "bloodredzippo"
 
-/obj/item/device/modkit_conversion/fluff/amara_hos_kit
-	name = "Amara's modkit"
-	desc = "A kit containing all the needed tools and parts to modify a Head of security armored coat. It has a red wolf painted on it."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_suit = /obj/item/clothing/suit/storage/vest/hoscoat
-	to_suit = /obj/item/clothing/suit/storage/vest/hoscoat/amara_hos
-
-//Nika Domashev
-
-/obj/item/device/modkit_conversion/fluff/nika_sec_kit
-	name = "Nika's modkit"
-	desc = "A kit containing all the needed tools and parts to modify a Officer Armor Vest."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_suit = /obj/item/clothing/suit/storage/vest/officer
-	to_suit = /obj/item/clothing/suit/storage/vest/officer/fluff/nika
 
 // *******
 // Gozulio
@@ -231,18 +210,6 @@
 // ********
 // Vitorhks
 // ********
-
-//Jessica Mayer
-
-/obj/item/device/modkit_conversion/fluff/jessica_sec_kit
-	name = "Jessica's modkit"
-	desc = "A kit containing all the needed tools and parts to modify a Officer Armor Vest."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_suit = /obj/item/clothing/suit/storage/vest/officer
-	to_suit = /obj/item/clothing/suit/storage/vest/officer/fluff/jessica
 
 // *******
 // ConZon4
@@ -479,40 +446,6 @@
 	else
 		return ..()
 	return
-
-// **************
-// SASOperative
-// **************
-
-/obj/item/device/modkit_conversion/fluff/skinner/a
-	name = "Joseph's modkit Mk1"
-	desc = "A kit containing all the needed tools and parts to modify a security jumpsuit."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_suit = /obj/item/clothing/under/rank/security
-	to_suit = /obj/item/clothing/under/rank/security/fluff/skinner
-
-/obj/item/device/modkit_conversion/fluff/skinner/b
-	name = "Joseph's modkit Mk2"
-	desc = "A kit containing all the needed tools and parts to modify a security armor."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_suit = /obj/item/clothing/suit/armor/vest
-	to_suit = /obj/item/clothing/suit/armor/vest/fluff/skinner
-
-/obj/item/device/modkit_conversion/fluff/skinner/c
-	name = "Joseph's modkit Mk3"
-	desc = "A kit containing all the needed tools and parts to modify a security helmet."
-
-	icon = 'icons/vore/custom_items_vr.dmi'
-	icon_state = "modkit"
-
-	from_suit = /obj/item/clothing/head/helmet
-	to_suit = /obj/item/clothing/head/helmet/fluff/skinner
 
 // **************
 // DeepIndigo
