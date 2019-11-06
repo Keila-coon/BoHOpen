@@ -44,10 +44,6 @@ datum/gear/suit/dark_tench
 	path = /obj/item/clothing/suit/storage/fluff/dark_trench
 	display_name = "dark tenchcoat"
 
-datum/gear/suit/formal_liz_suit
-	path = /obj/item/clothing/under/fluff/formal_suit_liz
-	display_name = "formal one peice suit"
-
 datum/gear/suit/mech_suit
 	path = /obj/item/clothing/suit/storage/fluff/fedcoat/mech_jacket
 	display_name = "mech pilot jacket"

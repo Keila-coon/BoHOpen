@@ -78,3 +78,7 @@ datum/gear/uniform/pcrc_b_uniform
 	path = /obj/item/clothing/under/rank/medical/fluff/pcrc_b_uniform
 	display_name = "PCRC Naval Uniform"
 	allowed_roles = list("Chief Medical Officer","Medical Doctor","Chemist","Psychiatrist","Paramedic")
+
+datum/gear/uniform/formal_liz_suit
+	path = /obj/item/clothing/under/fluff/formal_suit_liz
+	display_name = "formal one peice suit"
