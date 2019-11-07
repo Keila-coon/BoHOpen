@@ -23,7 +23,7 @@
 	melee_damage_upper = 40
 	attacktext = "slammed its enormous claws into"
 	movement_cooldown = 2
-//	environment_smash_flags = SMASH_LIGHT_STRUCTURES | SMASH_CONTAINERS | SMASH_WALLS // WALLS Temporary commenting, YW - Hv3
+//	environment_smash_flags = SMASH_LIGHT_STRUCTURES | SMASH_CONTAINERS | SMASH_WALLS
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	status_flags = 0
 	max_oxy = 0
