@@ -140,8 +140,6 @@
 	mappath = 'puzzle_corridor.dmm'
 	cost = 10
 
-/*
-// Comment out unfinished/unbalanced POI's here
 /datum/map_template/underdark/rad_threat
 	name = "Underdark Rad Threat"
 	mappath = 'rad_threat.dmm'
@@ -157,6 +155,9 @@
 	mappath = 'boss_mob.dmm'
 	cost = 60
 	allow_duplicates = FALSE
+
+/*
+// Comment out unfinished/unbalanced POI's here
 
 /datum/map_template/underdark/whatever_treasure
 	name = "Some Kinda Treasure" //A name, only visible to admins
