@@ -83,3 +83,14 @@
 	sort_category = "Xenowear"
 	cost = 15
 //	whitelisted = "Vox"
+
+//////////////////////
+// Ronson Lighter
+//////////////////////
+
+/obj/item/weapon/flame/lighter/zippo/ronson
+	name = "\improper Ronson lighter"
+	desc = "Flip, it's lit. Release, it's out. So simple that even Jim can use it."
+	icon = 'icons/boh/fluff.dmi'
+	icon_state = "ronson"
+	item_state = "ronson"
