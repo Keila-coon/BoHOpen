@@ -165,3 +165,20 @@
 	cost = -2
 	var_changes = list("flash_mod" = 2.0)
 // YW Addition End
+
+
+/////////////////////
+// BoH Materials
+/////////////////////
+
+/datum/trait/toxification_junky
+	name = "Recovering Addict"
+	desc = "Your body isn't quite used to being clean as of yet, and relapse very well might kill you. Be sure to notify Doctors not to overdose you!"
+	cost = -3
+	var_changes = list("chemOD_mod" = 5.0)
+
+/datum/trait/hemophilia
+	name = "Hemophilia"
+	desc = "Your body doesn't quite stop bleeding once it starts. You need immediate treatment for anything, even minor wounds, or it might turn out real bad for you."
+	cost = -4
+	var_changes = list("bloodloss_rate" = 2.0, "blood_volume" = 480)

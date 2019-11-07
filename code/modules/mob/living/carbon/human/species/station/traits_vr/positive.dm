@@ -193,3 +193,30 @@
 	cost = 1
 	var_changes = list("flags" = PASSTABLE)
 // YW Addition end
+
+
+/////////////////////
+// BoH Materials
+/////////////////////
+
+/datum/trait/toxification_junky_posi
+	name = "Addict"
+	desc = "Your body had adjusted to frequent, if not habitual use of substances. When you overdose, it affects you much less than it would someone not quite as 'experienced' as you."
+	cost = 2
+	var_changes = list("chemOD_mod" = -2.0)
+
+
+/datum/trait/hypercoag_posi
+	name = "Inhuman Coagulation"
+	desc = "You're either non-Human, or suffer some lesser form of hypercoagulation. When cut, or otherwise bleeding, your body is rather quick to react. You bleed out much slower than the average individual."
+	cost = 3
+	var_changes = list("bloodloss_rate" = 0.2)
+
+
+/datum/trait/commune
+	name = "Telepathy"
+	desc = "Quite simply, you've the ability to project thoughts into the minds of others. How you've come across this within the frontier of space will probably forever be a mystery."
+	cost = 8
+/datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
+	..(S,H)
+	H.verbs |= /mob/living/carbon/human/proc/commune
