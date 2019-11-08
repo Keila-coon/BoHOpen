@@ -218,6 +218,7 @@
 	icon_state = "vox-civ-assistant"
 	allowed = list(/obj/item/weapon/tank,/obj/item/weapon/pen,/obj/item/device/flashlight/pen)
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 0, bio = 100, rad = 25)
+	slowdown = 1
 	pressure_resistance = 5 * ONE_ATMOSPHERE
 
 /obj/item/clothing/head/helmet/space/vox/civ
