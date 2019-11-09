@@ -3,26 +3,13 @@
 	endWhen			= 90 + 15 + 1
 	var/spawncount
 	var/list/possible_slimes = list(
-		/mob/living/simple_mob/slime/purple,
-		/mob/living/simple_mob/slime/orange,
-		/mob/living/simple_mob/slime/metal,
-		/mob/living/simple_mob/slime/yellow,
-		/mob/living/simple_mob/slime/dark_purple,
-		/mob/living/simple_mob/slime/silver,
-		/mob/living/simple_mob/slime/ruby,
-		/mob/living/simple_mob/slime/cerulean,
-		/mob/living/simple_mob/slime/red,
-		/mob/living/simple_mob/slime/green,
-		/mob/living/simple_mob/slime/pink,
-		/mob/living/simple_mob/slime/gold,
-		/mob/living/simple_mob/slime/oil,
-		/mob/living/simple_mob/slime/emerald,
+		/mob/living/simple_mob/slime/xenobio,
 	)
 
 
 /datum/event/escaped_slimes/setup()
 	announceWhen = rand(announceWhen, announceWhen + 60)
-	spawncount = rand(2 * severity, 4 * severity)	//spiderlings only have a 50% chance to grow big and strong
+	spawncount = rand(2 * severity, 4 * severity)
 
 /datum/event/escaped_slimes/announce()
 	command_announcement.Announce("Unidentified lifesigns detected coming aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", new_sound = 'sound/AI/aliens.ogg')

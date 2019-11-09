@@ -114,28 +114,31 @@ datum
 /datum/reagent/toxin/defoliant
 	name = "Defoliant"
 	id = "defoliant"
-	description = "An exceptionally dangerous substance. Required for Chemical Projectors."
+	description = "An exceptionally dangerous substance. Not only does it react violently with exposure to oxygen, but it easily burns through most materials. - Required for Chemical Projectors."
+	taste_description = "stale coffee"
 	strength = 95
 	var/fire_mult = 55
+	affects_dead = 1
 
 /datum/reagent/toxin/defoliant/touch_mob(var/mob/living/L, var/amount)
 	if(istype(L))
 		L.adjust_fire_stacks(amount / fire_mult)
+		L.IgniteMob()
 
 /datum/reagent/toxin/defoliant/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	M.take_organ_damage(0, removed * 0.1)
 	if(prob(10 * fire_mult))
 		M.pl_effects()
-/*
-/datum/reagent/toxin/defoliant/touch_turf(var/turf/simulated/T)
+
+/datum/reagent/toxin/defoliant/touch_turf(var/turf/T)
 	if(!istype(T))
 		return
-	T.assume_gas("phoron", ceil(volume/2), T20C)
+	T.assume_gas("volatile_fuel", CEILING(volume/2, 1), T20C)
 	for(var/turf/simulated/floor/target_tile in range(0,T))
-		target_tile.assume_gas("phoron", volume/2, 400+T0C)
+		target_tile.assume_gas("volatile_fuel", volume/4, 800+T0C)
 		spawn (0) target_tile.hotspot_expose(700, 400)
 	remove_self(volume)
-*/
+
 /datum/reagent/toxin/defoliant/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
 	if(alien == IS_SLIME)
@@ -148,4 +151,5 @@ datum
 //Cont
 /obj/item/weapon/reagent_containers/glass/beaker/vial/defoliant
 	name = "vial (defoliant)"
-	prefill = list("defoliant" = 30)
+	desc = "Sealed within the vial is a very, very dangerous substance. Or so you can assume, based off the warning labels."
+	prefill = list("defoliant" = 60)
