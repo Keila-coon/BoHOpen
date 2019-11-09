@@ -79,16 +79,6 @@
 	sort_string = "ZBAAE"
 
 
-/datum/design/item/precursor/cablecoil
-	name = "Endless Cable Coil"
-	desc = "A tool utilizing cutting edge modern technology, and ancient component designs."
-	id = "hybridwelder"
-	req_tech = list(TECH_ENGINEERING = 6, TECH_MATERIAL = 6, TECH_BLUESPACE = 3, TECH_PHORON = 3, TECH_MAGNET = 5, TECH_PRECURSOR = 1)
-	materials = list(MAT_PLASTEEL = 2000, MAT_VERDANTIUM = 3000, MAT_PLASTIC = 8000, MAT_PHORON = 2750, MAT_DIAMOND = 2000)
-	build_path = /obj/item/stack/cable_coil/alien
-	sort_string = "ZBAAF"
-
-
 /datum/design/item/precursor/janusmodule
 	name = "Blackbox Circuit Datamass"
 	desc = "A design that seems to be in a constantly shifting superposition."
@@ -97,5 +87,3 @@
 	req_tech = list(TECH_MATERIAL = 7, TECH_BLUESPACE = 5, TECH_MAGNET = 6, TECH_PHORON = 3, TECH_ARCANE = 1, TECH_PRECURSOR = 2)
 	build_path = /obj/random/janusmodule
 	sort_string = "ZBBAA"
-
-
