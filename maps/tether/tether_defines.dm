@@ -46,8 +46,8 @@
 		Z_LEVEL_SPACE_MID,
 		Z_LEVEL_SPACE_HIGH))
 
-	station_name  = "Dagon"
-	station_short = "Tether"
+	station_name  = "NTRV Dagon"
+	station_short = "Dagon"
 	dock_name     = "Virgo-3B Colony"
 	boss_name     = "Central Command"
 	boss_short    = "CentCom"
